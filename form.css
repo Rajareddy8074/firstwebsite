@@ -1,0 +1,44 @@
+body{
+    Margin:50px;
+    border-style:groove;
+}
+.me{
+    border:5px outset;
+    background-color:aqua;
+    text-align:left;
+}
+a{
+    flex:10;
+    text-decoration:name;
+    outline:name;
+    text-align:center;
+    line-height:3;
+    color:red;
+
+
+}
+a:link,
+align-self: visited,
+a:focus
+{
+    background:white;
+    color:slateblue;
+}
+a:hover{
+    color:red;
+
+}
+ul{
+    background-color:white;
+    color:slateblue;
+    padding-left:20px;
+    width:30%;
+}
+ul li
+{
+    background-color:rgb(247, 244, 244);
+    color:darkred;
+    padding:5px;
+    margin-right:10px;
+    
+}

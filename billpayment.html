@@ -1,0 +1,61 @@
+</html>
+<head>
+	<link rel="stylesheet" href="form.css" />
+	<style>
+		body{
+			background-color:lightseagreen;
+		}
+		form{
+			line-height: 3;
+		}
+		input{
+			width: 40px;
+		}
+	</style>
+    <script>
+        function calculateTotal() {
+	var chicken = 90;
+    var mutton = 200;
+    var Thumsup = 30;
+    var cock = 15;
+  
+    var chickenQty = parseInt(document.getElementById("chicken").value);
+    var muttonQty = parseInt(document.getElementById("mutton").value);
+    var ThumsupQty = parseInt(document.getElementById("Thumsup").value);
+    var cockQty = parseInt(document.getElementById("cock").value);
+  
+    var total = (chicken * chickenQty) + 
+				(mutton * muttonQty) + 
+				(Thumsup * ThumsupQty) + 
+				(cock * cockQty);
+
+    document.getElementById("total").value = "Rs. " + total;
+  }
+    </script>
+</head>
+<body>
+	<h1>BIRIYANI AND DRINKS</h1>
+	<ul>
+		<li>Chicken Biriyani : 90.Rs</li>
+		<li>Mutton Biriyani  : 200.Rs</li>
+		<li>Thumsup : 30.Rs</li>
+		<li>cock : 15s.Rs</li>
+
+	</ul>
+	<form>
+		
+        <label for=		"chicken">Chicken Biriyani </label>
+		<input type="number" id="chicken" name="chicken" min="0"><br>
+		<label for="mutton">Mutton Biriyani   </label>
+        <input type="number" id="mutton" name="mutton" min="0"><br>
+        <label for="thumsup">Thums up</label>
+		<input for="thumsup" id="thumsup" name="thumsup" min="0"><br>
+        <label for=	"cock">cock </label>
+
+		<input type="number" id="cock" name="cock" min="0"><br>
+		<button type="button" onclick="calculateTotal()">Calculate Total</button><br><br>
+		<label for="total">Total:</label>
+		<input type="text" id="total" name="total" readonly>
+	</form>
+</body>
+</html>

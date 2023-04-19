@@ -1,0 +1,65 @@
+<html>
+<head>
+ 
+<meta name="viewport" content="width=device-width,inital-scale=1.0" />
+<link rel="stylesheet" href="form.css" />
+<title> Browser </title>
+<body>
+ <div class="me" >
+ <form name="f" ,method="post" action="register.php" >
+ <h2 align="center">Registration form</h2>
+ <table border="0" cellspacing="0 cellpadding="5" >
+<tr>
+<td><label for="username">username:</label></td>
+<td> <input type="text" name="username" required></td>
+</tr>
+<tr>
+<td> <label for="email">email:</label></td>
+<td> <input type="text" name="email" required></td>
+</tr>
+<tr>
+<td> <label for="gender" > gender:<label></td>
+<td> <input type="radio" name="gender">male</td>
+<td> <input type="radio" name="gender">female</td>
+
+</tr>
+<tr>
+<td><label for="religion"> religon:<label></td>
+<td><select name="religion" id="religion">
+<option value ="Hindu">Hindu</option>
+<option value ="Muslim">Muslim</option>
+</select>
+</tr>
+<tr>
+<td><label for="DOB">DOB:<label></td>
+<td><input type="date" name="DOB" required></td>
+</tr>
+<tr>
+ <td><label for ="lang">languages:</label></td>
+ <td> <input type="checkbox" name="lang"></td>
+</tr>
+<tr>
+ <td><label for="Address">Address:</label></td>
+ <td> <textarea id="Address" rows="5" cols="20"></textarea></td>
+</tr>
+<tr>
+ <td><label for="password">password:</label></td>
+ <td><input type="password" name="pwd"></td>
+</tr>
+<tr>
+ <td><input type="submit" name="submit" value="clickhere to submit"></td>
+ <td><input type="reset name ="reset"></td>
+</tr>
+</tables>
+<ul>
+<li> read the instructions</li>
+<li> fill all the fielss</li>
+<li> terms and conditions apply</li>
+</ul>
+ <nav class="NAV">
+ <a href="H"> Help</a>
+ </nav>
+ </form>
+ </div>
+ </body>
+ </html>
