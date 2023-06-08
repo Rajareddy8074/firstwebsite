@@ -1,0 +1,24 @@
+% extends 'base.html' %} 
+{% block head %} 
+<title>Task Master</title> 
+<style> 
+ body { 
+ margin: 0; 
+ font-family: sans-serif; 
+ background-image: url("/static/OIP.jpeg"); 
+ background-repeat: no-repeat; 
+ background-size: cover; 
+} 
+</style> 
+{% endblock %} 
+{% block body %} 
+<div class="content"> 
+ <h1 style="text-align: center">Update Task</h1> 
+ <div class="form"> 
+ <form action="/update/{{task.id}}" method="POST"> 
+ <input type="text" name="content" id="content" value="{{task.content}}"> 
+ <input type="submit" value="Update"> 
+ </form> 
+ </div> 
+</div> 
+{% endblock %}
